@@ -130,4 +130,15 @@ nav ul > li a:hover {
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 2px 2px #687987;
+}
+
+#video-text {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#video-text p {
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
