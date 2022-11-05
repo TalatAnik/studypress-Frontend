@@ -43,7 +43,7 @@ nav #menu-bars {
 
 .nav-active {
   height: 50px;
-  background-color: #26111E;
+  background-color: #2e071f;
   border-bottom: 4px solid #89B0CD;
   box-shadow: 0px 5px 12px -5px #687987;
 }
@@ -312,6 +312,7 @@ nav #menu-bars {
     left: 0px;
     width: 100vw;
     margin: 0px !important;
+    z-index: 1000;
   }
   nav > ul {
     position: relative;
