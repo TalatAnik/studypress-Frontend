@@ -13,6 +13,21 @@ $third-color: #26111E
 *
   font-family: $fontOne
 
+
+h2
+  font-size: 25px
+  margin: 30px 0px
+
+h3
+  font-size: 18px
+
+
+h4
+  font-size: 20px
+
+p
+  font-size: 17px
+
 header
   padding-top: 0px !important
   background-image: url('../imgs/hero-bg.png')
@@ -28,6 +43,20 @@ nav
     a:hover
       color: $first-color
 
+  #menu-bars
+    display: none
+
+.nav-active
+  height: 50px
+  background-color: $third-color
+  border-bottom: 4px solid $first-color
+  box-shadow: 0px 5px 12px -5px $second-color
+
+  #menu-bars
+    padding-top: 2px
+
+.description
+  text-align: center
 
 .brand
   font-weight: bold
@@ -61,6 +90,7 @@ nav
   p
     text-align: center
 
+
 .info
   max-width: 300px
   background-color: $third-color
@@ -71,7 +101,7 @@ nav
 
 #midroll 
   .container
-    padding-top: 50px
+    padding-top: 10px
 
     h2
       text-align: center
@@ -83,7 +113,7 @@ nav
   padding-top: 50px
 
 .feature-card
-  background: #fff
+  border: 1px solid $first-color
   margin-top: 50px
   border-radius: 4px
 
@@ -92,6 +122,7 @@ nav
     border-radius: 4px
     overflow: hidden
     border-radius: 4px
+    border: 1px solid $first-color
     box-shadow: 2px 2px 4px #1111117e
     
   .feature-card-img-holder > img
@@ -104,31 +135,46 @@ nav
 .feature-card-text
   text-align: center
   margin: 10px
-  position: static
 
-  h4
+  h3
     padding-top: 20px
     margin-bottom: 10px
-    color: $third-color
-    font-size: 18px
-    min-height: 70px
+    min-height: 60px
 
   p
     color: $third-color
     font-size: 15px
     text-align: justify !important
-    margin: 15px 
-    min-height: 135px
+    margin: 15px
+    min-height: 140px
 
   button
     margin: auto
     text-align: center
+    background-color: $first-color
+    color: #fff
     bottom: 0px
 
+  button:hover
+    background-color: $second-color
+
 #video-holder
+  margin: 0 auto
   border-radius: 4px
   overflow: hidden
-  box-shadow: 2px 2px $second-color
+  box-shadow: 0px 2px $second-color
+  
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
+    object-position: center
+    transition-duration: 0.8s
+    scale: 1
+
+  img:hover
+    scale: 1.1
+
 
 #video-text
   align-content: center
@@ -139,3 +185,153 @@ nav
 
   p
     text-align: center
+
+#exp
+  padding: 30px 0px
+
+  img
+    border-radius: 10px
+
+  h4
+    margin: 50px
+
+#exp > div
+  margin: 50px auto
+
+#exp div.grid
+  margin: 100px auto
+  padding-top: 100px
+
+
+#exp-text-1
+  border-right: 1px solid #fff
+  
+  
+#exp-text-1 > p
+  border-right: 4px solid #fff
+  padding: 0px  50px
+
+#exp-text-2
+  border-left: 1px solid #fff
+  text-align: right
+  
+#exp-text-2 > p
+  border-left: 4px solid #fff
+  padding: 0px  50px
+  text-align: right
+
+#exp-text-3
+  border-right: 1px solid #fff
+  
+  
+#exp-text-3 > p
+  border-right: 4px solid #fff
+  padding: 0px  50px
+
+#testimonial > div > h2
+  text-align: center
+
+.testimonial-block
+  border: 1px solid $first-color
+  margin-top: 20px
+  padding: 20px
+  height: 300px
+  border-radius: 10px
+
+  .test-id
+    height: 100px
+    display: flex
+    flex-direction: row
+
+    img
+      height: 80px
+      width: 80px
+      border-radius: 50%
+      margin-right: 20px
+      object-fit: cover
+      object-position: center
+
+
+    .test-name
+      display: flex
+      flex-direction: column
+
+      h3
+        margin: 10px 0px 0px 0px
+        padding: 0px
+        font-size: 14px
+
+      p
+        margin: 0px
+        padding: 10px
+        font-size: 12px
+  
+  .test-text
+    padding: 10px
+    
+    p
+      text-align: justify
+      font-size: 14px
+      color: #fff
+      margin: 0px auto
+
+
+  .icon-container
+    text-align: right
+    
+
+    svg      
+      height: 50px
+      width: 50px
+      object-fit: contain
+      padding: 0px
+  
+    
+
+@media (max-width: 1100px)
+  
+  .grid
+    margin: 10px auto !important
+
+  nav
+    position: fixed
+    top: 0px
+    left: 0px
+    width: 100vw
+    margin: 0px !important
+
+  nav > ul
+    position: relative
+    width: 100%
+    left: 0px
+
+  nav > ul > img
+    width: 350px
+    object-fit: contain
+    margin-right: auto
+
+  nav > ul:nth-child(1) > li
+    display: inline-block
+    margin-left: 30px
+
+    .brand      
+      font-size: 16px
+
+  nav > ul:nth-child(2) > li
+    display: none
+
+
+  #menu-bars
+    display: inline-block !important
+    margin: 10px 20px
+
+
+  .exp-text
+    border: none !important
+    
+    h4, p
+      text-align: center !important
+      border: none !important
+
+  #exp > div > div:nth-child(3) > div:first-child
+    order:2 !important

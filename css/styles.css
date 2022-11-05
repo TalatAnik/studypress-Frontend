@@ -3,6 +3,23 @@
   font-family: "Noto Sans Bengali", sans-serif;
 }
 
+h2 {
+  font-size: 25px;
+  margin: 30px 0px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 17px;
+}
+
 header {
   padding-top: 0px !important;
   background-image: url("../imgs/hero-bg.png");
@@ -19,6 +36,23 @@ nav ul > li a {
 }
 nav ul > li a:hover {
   color: #89B0CD;
+}
+nav #menu-bars {
+  display: none;
+}
+
+.nav-active {
+  height: 50px;
+  background-color: #26111E;
+  border-bottom: 4px solid #89B0CD;
+  box-shadow: 0px 5px 12px -5px #687987;
+}
+.nav-active #menu-bars {
+  padding-top: 2px;
+}
+
+.description {
+  text-align: center;
 }
 
 .brand {
@@ -69,7 +103,7 @@ nav ul > li a:hover {
 }
 
 #midroll .container {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 #midroll .container h2 {
   text-align: center;
@@ -83,7 +117,7 @@ nav ul > li a:hover {
 }
 
 .feature-card {
-  background: #fff;
+  border: 1px solid #89B0CD;
   margin-top: 50px;
   border-radius: 4px;
 }
@@ -92,6 +126,7 @@ nav ul > li a:hover {
   border-radius: 4px;
   overflow: hidden;
   border-radius: 4px;
+  border: 1px solid #89B0CD;
   box-shadow: 2px 2px 4px rgba(17, 17, 17, 0.4941176471);
 }
 .feature-card .feature-card-img-holder > img {
@@ -104,32 +139,48 @@ nav ul > li a:hover {
 .feature-card-text {
   text-align: center;
   margin: 10px;
-  position: static;
 }
-.feature-card-text h4 {
+.feature-card-text h3 {
   padding-top: 20px;
   margin-bottom: 10px;
-  color: #26111E;
-  font-size: 18px;
-  min-height: 70px;
+  min-height: 60px;
 }
 .feature-card-text p {
   color: #26111E;
   font-size: 15px;
   text-align: justify !important;
   margin: 15px;
-  min-height: 135px;
+  min-height: 140px;
 }
 .feature-card-text button {
   margin: auto;
   text-align: center;
+  background-color: #89B0CD;
+  color: #fff;
   bottom: 0px;
+}
+.feature-card-text button:hover {
+  background-color: #687987;
 }
 
 #video-holder {
+  margin: 0 auto;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 2px 2px #687987;
+  box-shadow: 0px 2px #687987;
+}
+#video-holder img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition-duration: 0.8s;
+  scale: 1;
+}
+#video-holder img:hover {
+  scale: 1.1;
 }
 
 #video-text {
@@ -141,4 +192,160 @@ nav ul > li a:hover {
 }
 #video-text p {
   text-align: center;
+}
+
+#exp {
+  padding: 30px 0px;
+}
+#exp img {
+  border-radius: 10px;
+}
+#exp h4 {
+  margin: 50px;
+}
+
+#exp > div {
+  margin: 50px auto;
+}
+
+#exp div.grid {
+  margin: 100px auto;
+  padding-top: 100px;
+}
+
+#exp-text-1 {
+  border-right: 1px solid #fff;
+}
+
+#exp-text-1 > p {
+  border-right: 4px solid #fff;
+  padding: 0px 50px;
+}
+
+#exp-text-2 {
+  border-left: 1px solid #fff;
+  text-align: right;
+}
+
+#exp-text-2 > p {
+  border-left: 4px solid #fff;
+  padding: 0px 50px;
+  text-align: right;
+}
+
+#exp-text-3 {
+  border-right: 1px solid #fff;
+}
+
+#exp-text-3 > p {
+  border-right: 4px solid #fff;
+  padding: 0px 50px;
+}
+
+#testimonial > div > h2 {
+  text-align: center;
+}
+
+.testimonial-block {
+  border: 1px solid #89B0CD;
+  margin-top: 20px;
+  padding: 20px;
+  height: 300px;
+  border-radius: 10px;
+}
+.testimonial-block .test-id {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.testimonial-block .test-id img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.testimonial-block .test-id .test-name {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-block .test-id .test-name h3 {
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+.testimonial-block .test-id .test-name p {
+  margin: 0px;
+  padding: 10px;
+  font-size: 12px;
+}
+.testimonial-block .test-text {
+  padding: 10px;
+}
+.testimonial-block .test-text p {
+  text-align: justify;
+  font-size: 14px;
+  color: #fff;
+  margin: 0px auto;
+}
+.testimonial-block .icon-container {
+  text-align: right;
+}
+.testimonial-block .icon-container svg {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0px;
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    margin: 10px auto !important;
+  }
+  nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    margin: 0px !important;
+  }
+  nav > ul {
+    position: relative;
+    width: 100%;
+    left: 0px;
+  }
+  nav > ul > img {
+    width: 350px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: auto;
+  }
+  nav > ul:nth-child(1) > li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  nav > ul:nth-child(1) > li .brand {
+    font-size: 16px;
+  }
+  nav > ul:nth-child(2) > li {
+    display: none;
+  }
+  #menu-bars {
+    display: inline-block !important;
+    margin: 10px 20px;
+  }
+  .exp-text {
+    border: none !important;
+  }
+  .exp-text h4, .exp-text p {
+    text-align: center !important;
+    border: none !important;
+  }
+  #exp > div > div:nth-child(3) > div:first-child {
+    order: 2 !important;
+  }
 }/*# sourceMappingURL=styles.css.map */
