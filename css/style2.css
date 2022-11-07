@@ -155,12 +155,11 @@ nav #menu-bars {
 .feature-card-text button {
   margin: auto;
   text-align: center;
-  background-color: #89B0CD;
   color: #fff;
   bottom: 0px;
 }
 .feature-card-text button:hover {
-  background-color: #687987;
+  background-color: #89B0CD;
 }
 
 #video-holder {
