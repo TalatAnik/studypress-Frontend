@@ -355,18 +355,18 @@ nav #menu-bars {
   text-align: center;
 }
 
-.exp-text h4 {
-  color: #fff !important;
+.exp-text * {
+  color: #26111E !important;
 }
 
 .exp-text, .exp-text > p {
   border-color: #687987 !important;
 }
 
-.exp-h1, .test-p {
+.test-p {
   color: #26111E !important;
 }
 
 .icon-container > svg {
   fill: #89B0CD !important;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=style2.css.map */
